@@ -1402,6 +1402,7 @@
 
         <!-- Screen 6.5: Host After Start -->
         <div id="screen-host-after-start" class="screen hidden">
+            <button class="back-btn" onclick="confirmBackToHome()">←</button>
             <h2>Phòng đã bắt đầu</h2>
             
             <div style="text-align: center; padding: 20px 0;">
@@ -1415,7 +1416,7 @@
                 <button class="btn btn-primary" onclick="hostJoinGame()" style="flex: 1;">
                     🎊 THAM GIA CHƠI
                 </button>
-                <button class="btn btn-secondary" onclick="navigateTo('host-observe')" style="flex: 1;">
+                <button class="btn btn-secondary" onclick="navigateTo('host-observe', false, true)" style="flex: 1;">
                     👁️ QUAN SÁT
                 </button>
             </div>
@@ -1428,7 +1429,7 @@
 
         <!-- Screen 6.6: Host Observe -->
         <div id="screen-host-observe" class="screen hidden">
-            <button class="back-btn" onclick="navigateTo('host-after-start')">←</button>
+            <button class="back-btn" onclick="confirmBackToHome()">←</button>
             <h2>Phần Quan Sát</h2>
 
             <div class="tab-navigation">
@@ -1669,9 +1670,12 @@ function createSparks() {
 createSparks();
 
 // Navigation
-function navigateTo(screenId, clearHistory = false) {
+function navigateTo(screenId, clearHistory = false, replaceHistory = false) {
     if (clearHistory) {
         navigationHistory = [screenId];
+    } else if (replaceHistory) {
+        // Thay thế màn hình hiện tại thay vì thêm mới
+        navigationHistory[navigationHistory.length - 1] = screenId;
     } else {
         navigationHistory.push(screenId);
     }
@@ -1679,7 +1683,12 @@ function navigateTo(screenId, clearHistory = false) {
     gameState.currentScreen = screenId;
     saveGameState();
     showScreen(screenId);
-    history.pushState({ screen: screenId }, '', '#' + screenId);
+    
+    if (replaceHistory) {
+        history.replaceState({ screen: screenId }, '', '#' + screenId);
+    } else {
+        history.pushState({ screen: screenId }, '', '#' + screenId);
+    }
 }
 
 function goBack() {
@@ -2212,7 +2221,8 @@ function submitPlayerName() {
 function startGame() {
     gameState.gameStarted = true;
     saveGameState();
-    navigateTo('host-after-start');
+    // Clear history để tránh back loop
+    navigateTo('host-after-start', true);
 }
 
 // Host join game
