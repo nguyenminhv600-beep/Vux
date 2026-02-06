@@ -1977,59 +1977,67 @@ function updateDenomList() {
 }
 
 // Create room - FIXED VERSION
-function createRoom() {
-    const hostName = document.getElementById('host-name').value.trim();
-    const shakeCount = document.getElementById('shake-count').value;
-    const mode = document.querySelector('input[name="mode"]:checked').value;
+async function createRoom() {
+  const hostName = document.getElementById('host-name').value.trim();
+  const shakeCount = parseInt(document.getElementById('shake-count').value);
+  const mode = document.querySelector('input[name="mode"]:checked').value;
 
-    if (!hostName) {
-        alert('Vui lòng nhập tên chủ phòng!');
-        return;
-    }
+  if (!hostName) {
+    alert('Vui lòng nhập tên chủ phòng!');
+    return;
+  }
 
-    collectSpecialPrizes();
+  collectSpecialPrizes();
 
-    if (Object.keys(gameState.denominations).length === 0 && Object.keys(gameState.specialPrizes).length === 0) {
-        alert('Vui lòng chọn ít nhất một phần thưởng!');
-        return;
-    }
+  if (
+    Object.keys(gameState.denominations).length === 0 &&
+    Object.keys(gameState.specialPrizes).length === 0
+  ) {
+    alert('Vui lòng chọn ít nhất một phần thưởng!');
+    return;
+  }
 
-    gameState.hostName = hostName;
-    gameState.shakeCount = parseInt(shakeCount);
-    gameState.remainingShakes = parseInt(shakeCount);
-    gameState.mode = mode;
-    gameState.roomCode = generateRoomCode();
-    gameState.roomLink = window.location.origin + window.location.pathname + '?room=' + gameState.roomCode;
-    gameState.isHost = true;
-    gameState.gameStarted = false;
+  // 🔥 RESET STATE CŨ
+  clearGameState();
 
-    gameState.denominationsBackup = {...gameState.denominations};
-    gameState.specialPrizesBackup = {...gameState.specialPrizes};
+  const roomCode = generateRoomCode();
 
-    updatePrizeInventory();
-    saveGameState();
+  const roomData = {
+    hostName,
+    shakeCount,
+    remainingShakes: shakeCount,
+    mode,
+    denominations: gameState.denominations,
+    specialPrizes: gameState.specialPrizes,
+    gameStarted: false
+  };
 
-    navigateTo('admin');
-    document.getElementById('room-code-display').textContent = gameState.roomCode;
-    document.getElementById('room-code-display-2').textContent = gameState.roomCode;
-    
-    const qrcodeElement = document.getElementById('qrcode');
-    qrcodeElement.innerHTML = '';
-    new QRCode(qrcodeElement, {
-        text: gameState.roomLink,
-        width: 180,
-        height: 180,
-        colorDark: "#000000",
-        colorLight: "#ffffff",
-        correctLevel: QRCode.CorrectLevel.H
-    });
-    
-    // Convert canvas to img after a short delay to allow QR rendering
-    setTimeout(() => {
-        convertQRCanvasToImage();
-    }, 100);
+  try {
+    await FirebaseHelper.createRoom(roomCode, roomData);
+  } catch (err) {
+    console.error(err);
+    alert('❌ Lỗi khi tạo phòng Firebase');
+    return;
+  }
+
+  // ✅ SET STATE MỚI
+  gameState.roomCode = roomCode;
+  gameState.roomLink =
+    window.location.origin + window.location.pathname + '?room=' + roomCode;
+  gameState.hostName = hostName;
+  gameState.isHost = true;
+  gameState.gameStarted = false;
+  gameState.remainingShakes = shakeCount;
+
+  saveGameState();
+
+  navigateTo('admin');
+
+  document.getElementById('room-code-display').textContent = roomCode;
+  document.getElementById('room-code-display-2').textContent = roomCode;
+
+  generateQRCode();
 }
-
 function generateRoomCode() {
     return 'TET' + Math.random().toString(36).substr(2, 6).toUpperCase();
 }
