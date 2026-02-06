@@ -2217,32 +2217,33 @@ async function joinRoom() {
 }
 
 // Submit player name
-function submitPlayerName() {
-    const playerName = document.getElementById('player-name').value;
-    
-    if (!playerName) {
-        alert('Vui lòng nhập tên của bạn!');
-        return;
-    }
+async function submitPlayerName() {
+  const playerName = document.getElementById('player-name').value.trim();
+  if (!playerName) {
+    alert('Vui lòng nhập tên của bạn!');
+    return;
+  }
 
-    gameState.currentPlayer = playerName;
-    
-    const newPlayer = {
-        name: playerName,
-        prize: null,
-        joinedAt: new Date().toISOString(),
-        status: 'waiting'
-    };
-    
-    gameState.players.push(newPlayer);
-    gameState.waitingPlayers.push(newPlayer);
-    
-    updatePlayerList();
-    updateWaitingPlayerList();
-    saveGameState();
-    
-    document.getElementById('welcome-name').textContent = playerName;
-    navigateTo('welcome');
+  const roomCode = gameState.roomCode;
+  const { database, ref, push, set } = window.firebaseDB;
+
+  const playerRef = push(ref(database, `rooms/${roomCode}/players`));
+
+  const playerData = {
+    name: playerName,
+    status: "waiting",
+    joinedAt: Date.now()
+  };
+
+  // ✅ GHI PLAYER VÀO FIREBASE
+  await set(playerRef, playerData);
+
+  // ✅ LƯU LOCAL CHO NGƯỜI CHƠI
+  gameState.currentPlayer = playerName;
+  saveGameState();
+
+  document.getElementById('welcome-name').textContent = playerName;
+  navigateTo('welcome');
 }
 
 // Start game
