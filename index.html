@@ -2032,7 +2032,6 @@ async function createRoom() {
   }
 
   navigateTo('admin');
-  listenPlayersRealtime();
 
   document.getElementById('room-code-display').textContent = roomCode;
   document.getElementById('room-code-display-2').textContent = roomCode;
@@ -2821,6 +2820,11 @@ window.addEventListener('load', function() {
     
     try {
         loadGameState();
+        // ✅ NẾU LÀ HOST + CÓ ROOM → QUAY LẠI ADMIN + LISTEN
+if (gameState.isHost && gameState.roomCode) {
+  navigateTo('admin', true);
+  listenPlayersRealtime();
+}
     } catch (e) {
         console.error('Failed to load game state:', e);
         showScreen('home');
