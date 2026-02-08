@@ -530,216 +530,6 @@
             flex: 7;
         }
 
-        /* QR Code section */
-        .qr-section {
-            text-align: center;
-            padding: 25px 0;
-        }
-
-        .qr-code {
-            width: 220px;
-            margin: 18px auto;
-            padding: 15px;
-            background: white;
-            border-radius: 18px;
-            box-shadow: 0 8px 25px rgba(212, 32, 47, 0.2);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        #qrcode {
-            display: inline-block;
-            width: 180px;
-            height: 180px;
-        }
-
-        #qrcode img, #qrcode canvas {
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
-
-        .qr-download-btn {
-            margin-top: 8px;
-            padding: 4px 12px;
-            background: #FFD700;
-            color: #8B0000;
-            border: 1px solid #FFD700;
-            border-radius: 15px;
-            font-weight: 600;
-            font-size: 11px;
-            cursor: pointer;
-            transition: all 0.2s;
-            -webkit-tap-highlight-color: transparent;
-            touch-action: manipulation;
-        }
-
-        .qr-download-btn:hover,
-        .qr-download-btn:active {
-            background: #FFA500;
-            border-color: #FFA500;
-        }
-
-        /* Share popup overlay */
-        .share-popup-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-            animation: fadeIn 0.3s;
-        }
-
-        .share-popup {
-            background: white;
-            border-radius: 25px;
-            padding: 30px 25px;
-            max-width: 400px;
-            width: 90%;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            animation: slideUp 0.3s ease-out;
-        }
-
-        @keyframes slideUp {
-            from {
-                transform: translateY(50px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        @keyframes fadeOut {
-            from {
-                opacity: 1;
-            }
-            to {
-                opacity: 0;
-            }
-        }
-
-        .share-popup-header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .share-popup-header h3 {
-            color: #D4202F;
-            font-size: 22px;
-            margin-bottom: 10px;
-        }
-
-        .share-popup-header .emoji {
-            font-size: 48px;
-            margin-bottom: 10px;
-        }
-
-        .share-message {
-            background: #FFF8DC;
-            padding: 18px;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            border-left: 4px solid #FFD700;
-        }
-
-        .share-message p {
-            color: #8B0000;
-            font-size: 14px;
-            line-height: 1.6;
-            margin: 0;
-            font-weight: 600;
-        }
-
-        .share-room-code {
-            background: #FFF4CC;
-            padding: 12px;
-            border-radius: 12px;
-            margin: 10px 0;
-            text-align: center;
-        }
-
-        .share-room-code strong {
-            color: #D4202F;
-            font-size: 20px;
-            font-family: 'Courier New', monospace;
-            letter-spacing: 2px;
-        }
-
-        .share-link {
-            background: #E3F2FD;
-            padding: 10px;
-            border-radius: 10px;
-            margin: 10px 0;
-            word-break: break-all;
-            font-size: 12px;
-            color: #1976D2;
-            text-align: center;
-        }
-
-        .share-options {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
-            margin-top: 20px;
-        }
-
-        .share-option {
-            background: #F5F5F5;
-            border: 2px solid transparent;
-            border-radius: 15px;
-            padding: 15px 10px;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.3s;
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        .share-option:hover,
-        .share-option:active {
-            background: #FFF4CC;
-            border-color: #FFD700;
-            transform: scale(1.05);
-        }
-
-        .share-option-icon {
-            font-size: 32px;
-            margin-bottom: 5px;
-        }
-
-        .share-option-label {
-            font-size: 11px;
-            color: #666;
-            font-weight: 600;
-        }
-
-        .share-popup-close {
-            width: 100%;
-            padding: 12px;
-            background: #D4202F;
-            color: white;
-            border: none;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 14px;
-            margin-top: 15px;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .share-popup-close:hover,
-        .share-popup-close:active {
-            background: #8B0000;
-        }
-
         .room-code {
             background: #FFF4CC;
             padding: 18px;
@@ -809,13 +599,13 @@
         }
 
         .player-status.waiting {
-    background: #4CAF50;
-    color: white;
-}
+            background: #4CAF50;
+            color: white;
+        }
         .player-status.playing {
-    background: #4CAF50;
-    color: white;
-}
+            background: #4CAF50;
+            color: white;
+        }
         .player-prize {
             background: #FFD700;
             padding: 5px 14px;
@@ -1026,68 +816,6 @@
             font-size: 18px;
         }
 
-        /* Bank info form */
-        .bank-options {
-            margin: 18px 0;
-        }
-
-        .bank-option {
-            border: 2px solid #FFE4E1;
-            border-radius: 18px;
-            padding: 18px;
-            margin-bottom: 14px;
-            cursor: pointer;
-            transition: all 0.3s;
-            -webkit-tap-highlight-color: transparent;
-            touch-action: manipulation;
-        }
-
-        .bank-option:hover,
-        .bank-option:active {
-            border-color: #D4202F;
-            background: #FFF8DC;
-        }
-
-        .bank-option.selected {
-            border-color: #D4202F;
-            background: #FFF4CC;
-        }
-
-        .bank-option h3 {
-            color: #8B0000;
-            margin-bottom: 8px;
-            font-size: 16px;
-        }
-
-        .bank-option p {
-            color: #666;
-            font-size: 13px;
-            margin: 0;
-        }
-
-        .upload-area {
-            border: 3px dashed #FFD700;
-            border-radius: 18px;
-            padding: 35px;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.3s;
-            margin: 18px 0;
-            -webkit-tap-highlight-color: transparent;
-            touch-action: manipulation;
-        }
-
-        .upload-area:hover,
-        .upload-area:active {
-            border-color: #D4202F;
-            background: #FFF4CC;
-        }
-
-        .upload-icon {
-            font-size: 44px;
-            margin-bottom: 14px;
-        }
-
         /* Activity item */
         .activity-item {
             display: flex;
@@ -1231,9 +959,8 @@
             font-size: 16px;
         }
     </style>
-    <!-- QRCode.js Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-</head><script type="module">
+</head>
+<script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import {
   getDatabase,
@@ -1377,12 +1104,6 @@ console.log("🔥 FIREBASE READY");
             </div>
 
             <button class="btn btn-primary" onclick="joinRoom()">🎉 THAM GIA</button>
-
-            <div style="text-align: center; margin: 28px 0; padding: 18px; background: #FFF4CC; border-radius: 15px;">
-                <p style="color: #8B0000; font-size: 13px; margin-bottom: 10px;">Hoặc quét mã QR từ chủ phòng</p>
-                <div style="font-size: 44px;">📷</div>
-                <p style="color: #666; font-size: 12px; margin-top: 10px;">Sử dụng ứng dụng camera để quét QR</p>
-            </div>
         </div>
 
         <!-- Screen 4: Enter Name -->
@@ -1413,18 +1134,10 @@ console.log("🔥 FIREBASE READY");
         <div id="screen-admin" class="screen hidden">
             <button class="back-btn" onclick="confirmBackToHome()">←</button>
             <h2>Bảng điều khiển</h2>
-            
-            <div class="qr-section">
-                <div class="qr-code">
-                    <div id="qrcode"></div>
-                    <button class="qr-download-btn" onclick="downloadQRCode()">💾 Lưu QR</button>
-                </div>
-                <div class="room-code">
-                    <div class="room-code-label">Mã phòng</div>
-                    <div class="room-code-value" id="room-code-display">XXXX</div>
-                </div>
+            <div class="room-code">
+                <div class="room-code-label">Mã phòng</div>
+                <div class="room-code-value" id="room-code-display">XXXX</div>
             </div>
-
             <h3>👥 Người tham gia (<span id="player-count">0</span>)</h3>
             <div id="player-list" class="player-list">
                 <div class="empty-state">
@@ -1475,12 +1188,15 @@ console.log("🔥 FIREBASE READY");
             <h2>Phần Quan Sát</h2>
 
             <div class="tab-navigation">
-                <button class="tab-btn active" onclick="switchTab('waiting-players')">
-                    ⏳ Đang chờ
-                </button>
-                <button class="tab-btn" onclick="switchTab('recent-winners')">
-                    🎁 Mới trúng
-                </button>
+            <button class="tab-btn active"
+        onclick="switchTab('waiting-players', this)">
+                ⏳ Đang chờ
+            </button>
+
+            <button class="tab-btn"
+        onclick="switchTab('recent-winners', this)">
+               🎁 Mới trúng
+            </button>
             </div>
 
             <!-- Tab: Waiting Players -->
@@ -1570,105 +1286,14 @@ console.log("🔥 FIREBASE READY");
                 </div>
 
                 <div id="prize-action-buttons">
-                    <button class="btn btn-primary" onclick="navigateTo('withdraw')">💰 RÚT LÌ XÌ</button>
-                    <button class="btn btn-secondary" onclick="continueShaking()">🔄 TIẾP TỤC CHƠI</button>
+                    <button class="btn btn-primary" onclick="continueShaking()">🔄 TIẾP TỤC CHƠI</button>
                 </div>
             </div>
-        </div>
-
-        <!-- Screen 11: Withdraw Options -->
-        <div id="screen-withdraw" class="screen hidden">
-            <button class="back-btn" onclick="goBack()">←</button>
-            <h2>Rút Lì Xì</h2>
-            
-            <div class="bank-options">
-                <div class="bank-option" id="option-qr" onclick="selectWithdrawOption('qr')">
-                    <h3>📸 Upload QR Code</h3>
-                    <p>Chụp/tải lên mã QR ngân hàng của bạn</p>
-                </div>
-
-                <div class="bank-option" id="option-manual" onclick="selectWithdrawOption('manual')">
-                    <h3>✍️ Nhập thông tin</h3>
-                    <p>Điền thông tin tài khoản ngân hàng</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Screen 12: QR Upload -->
-        <div id="screen-qr-upload" class="screen hidden">
-            <button class="back-btn" onclick="goBack()">←</button>
-            <h2>Upload QR Code</h2>
-            
-            <div class="upload-area" onclick="document.getElementById('qr-file').click()">
-                <input type="file" id="qr-file" accept="image/*" style="display: none;" onchange="previewQR(event)">
-                <div class="upload-icon">📤</div>
-                <p style="color: #8B0000; font-weight: 600;">Chạm để chọn ảnh QR</p>
-                <p style="color: #999; font-size: 13px; margin-top: 8px;">PNG, JPG</p>
-            </div>
-
-            <div id="qr-preview" class="hidden" style="text-align: center; margin: 18px 0;">
-                <img id="qr-preview-img" style="max-width: 100%; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.1);">
-            </div>
-
-            <button class="btn btn-primary" id="submit-qr-btn" onclick="submitQRCode()" disabled>✅ XÁC NHẬN</button>
-        </div>
-
-        <!-- Screen 13: Manual Bank Info -->
-        <div id="screen-bank-info" class="screen hidden">
-            <button class="back-btn" onclick="goBack()">←</button>
-            <h2>Thông tin ngân hàng</h2>
-            
-            <div class="form-group">
-                <label>🏦 Tên ngân hàng</label>
-                <select id="bank-name">
-                    <option value="">Chọn ngân hàng</option>
-                    <option value="Vietcombank">Vietcombank</option>
-                    <option value="Techcombank">Techcombank</option>
-                    <option value="BIDV">BIDV</option>
-                    <option value="VietinBank">VietinBank</option>
-                    <option value="ACB">ACB</option>
-                    <option value="MB">MB Bank</option>
-                    <option value="VPBank">VPBank</option>
-                    <option value="TPBank">TPBank</option>
-                    <option value="Sacombank">Sacombank</option>
-                    <option value="other">Ngân hàng khác</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label>👤 Tên tài khoản</label>
-                <input type="text" id="account-name" placeholder="NGUYEN VAN A">
-            </div>
-
-            <div class="form-group">
-                <label>💳 Số tài khoản</label>
-                <input type="text" id="account-number" placeholder="0123456789">
-            </div>
-
-            <button class="btn btn-primary" onclick="submitBankInfo()">✅ GỬI THÔNG TIN</button>
-        </div>
-
-        <!-- Screen 14: Success -->
-        <div id="screen-success" class="screen hidden">
-            <div style="text-align: center; padding: 35px 0;">
-                <div style="font-size: 88px; margin-bottom: 18px;">✅</div>
-                <h2>Thành công!</h2>
-                <p style="color: #666; font-size: 15px; margin-bottom: 28px;">
-                    Thông tin của bạn đã được gửi đến chủ phòng.<br>
-                    Vui lòng chờ chuyển khoản.
-                </p>
-                <div style="background: #FFF4CC; padding: 18px; border-radius: 18px; margin: 18px 0;">
-                    <p style="color: #8B0000; font-weight: 700; font-size: 16px;">
-                        🎁 Phần thưởng: <span id="final-prize">100K</span>
-                    </p>
-                </div>
-            </div>
-            <button class="btn btn-primary" onclick="navigateTo('home', true)">🏠 VỀ TRANG CHỦ</button>
         </div>
     </div>
 
-    <script>
-// Game state
+<script>
+    // ========== 1. GAME STATE ==========
 let gameState = {
     mode: 'online',
     hostName: '',
@@ -1690,29 +1315,23 @@ let gameState = {
     remainingShakes: 10,
     currentScreen: 'home',
     isHost: false,
-    gameStarted: false
+    gameStarted: false,
+    roomStatus: 'idle',
+    roomCreatedAt: 0,
+    playerRoomCode: ''
 };
 
 const STORAGE_KEY = 'tet_lixi_game_state';
+const ROOM_EXPIRY_TIME = 24 * 60 * 60 * 1000; // 24 hours
 let navigationHistory = ['home'];
 let specialPrizeCounter = 0;
 let playersListenerStarted = false;
 let playersListenerRoom = null;
-// Generate sparks for fireworks
-function createSparks() {
-    const fireworks = document.getElementById('fireworks');
-    for (let i = 0; i < 30; i++) {
-        const spark = document.createElement('div');
-        spark.className = 'spark';
-        spark.style.left = Math.random() * 100 + '%';
-        spark.style.top = Math.random() * 100 + '%';
-        spark.style.animationDelay = Math.random() * 3 + 's';
-        fireworks.appendChild(spark);
-    }
-}
-createSparks();
+let shakeTimeout;
+let shakeStartTime;
+let roomStatusListener = null;
 
-// Navigation
+// ========== 2. NAVIGATION ==========
 window.navigateTo = function (screenId, clearHistory = false, replaceHistory = false) {
     if (clearHistory) {
         navigationHistory = [screenId];
@@ -1732,7 +1351,25 @@ window.navigateTo = function (screenId, clearHistory = false, replaceHistory = f
         history.pushState({ screen: screenId }, '', '#' + screenId);
     }
 };
+
+function showScreen(screenId) {
+    document.querySelectorAll('.screen').forEach(screen => {
+        screen.classList.add('hidden');
+    });
+    const targetScreen = document.getElementById('screen-' + screenId);
+    if (targetScreen) {
+        targetScreen.classList.remove('hidden');
+    }
+    
+    setTimeout(() => initTouchSupport(), 100);
+}
+
 function goBack() {
+    if (gameState.currentScreen === 'host-observe' && gameState.isHost && gameState.gameStarted) {
+        navigateTo('host-after-start');
+        return;
+    }
+    
     if (navigationHistory.length > 1) {
         navigationHistory.pop();
         const previousScreen = navigationHistory[navigationHistory.length - 1];
@@ -1748,7 +1385,7 @@ window.addEventListener('popstate', function(event) {
     goBack();
 });
 
-// Storage functions
+// ========== 3. STORAGE ==========
 function saveGameState() {
     try {
         gameState.savedTime = Date.now();
@@ -1761,64 +1398,64 @@ function saveGameState() {
 function loadGameState() {
     try {
         const saved = localStorage.getItem(STORAGE_KEY);
-        if (saved) {
-            const loaded = JSON.parse(saved);
-            
-            if (!loaded || typeof loaded !== 'object') {
-                clearGameState();
-                return;
-            }
-            
-            const savedTime = loaded.savedTime || 0;
-            const currentTime = Date.now();
-            const twentyFourHours = 24 * 60 * 60 * 1000;
-            
-            if (currentTime - savedTime > twentyFourHours) {
-                clearGameState();
-                return;
-            }
-            
-            Object.assign(gameState, loaded);
-            
-            if (gameState.isHost && gameState.roomCode) {
-    try {
-        // 🔥 CHỈ restore admin khi đang ở admin
-        if (gameState.currentScreen === 'admin') {
-            restoreAdminDashboard();
+        if (!saved) return;
+        
+        const loaded = JSON.parse(saved);
+        
+        if (!loaded || typeof loaded !== 'object') {
+            clearGameState();
+            return;
         }
-
-        // 👂 Luôn bật listener
-        listenPlayersRealtime();
-
-        // 🧭 Quay lại đúng screen trước khi reload
-        if (gameState.currentScreen) {
-            showScreen(gameState.currentScreen);
-        } else {
-            showScreen('admin');
+        
+        const savedTime = loaded.savedTime || 0;
+        const currentTime = Date.now();
+        
+        if (currentTime - savedTime > ROOM_EXPIRY_TIME) {
+            console.log('⏰ Room expired, clearing state');
+            clearGameState();
+            return;
         }
-
-    } catch (e) {
-        console.error('Restore host state failed:', e);
-        clearGameState();
-        showScreen('home');
-        return;
-    }
-}
-            if (gameState.denominations && Object.keys(gameState.denominations).length > 0) {
+        
+        Object.assign(gameState, loaded);
+        
+        // RESTORE HOST
+        if (gameState.isHost && gameState.roomCode) {
+            setTimeout(() => {
+                if (gameState.currentScreen === 'admin' || 
+                    gameState.currentScreen === 'host-observe' ||
+                    gameState.currentScreen === 'host-after-start') {
+                    try {
+                        restoreAdminDashboard();
+                    } catch (e) {
+                        console.error('Error restoring dashboard:', e);
+                    }
+                }
+            }, 100);
+            
+            listenPlayersRealtime();
+        }
+        
+        // RESTORE PLAYER & LISTEN ROOM STATUS
+        if (!gameState.isHost && gameState.playerRoomCode) {
+            listenRoomStatus();
+        }
+        
+        if (gameState.denominations && Object.keys(gameState.denominations).length > 0) {
+            setTimeout(() => {
                 try {
                     updateDenomList();
                 } catch (e) {
                     console.error('Error updating denom list:', e);
                 }
-            }
-            
-            if (gameState.currentScreen && gameState.currentScreen !== 'home') {
-                const screenElement = document.getElementById('screen-' + gameState.currentScreen);
-                if (screenElement) {
-                    showScreen(gameState.currentScreen);
-                } else {
-                    showScreen('home');
-                }
+            }, 100);
+        }
+        
+        if (gameState.currentScreen && gameState.currentScreen !== 'home') {
+            const screenElement = document.getElementById('screen-' + gameState.currentScreen);
+            if (screenElement) {
+                showScreen(gameState.currentScreen);
+            } else {
+                showScreen('home');
             }
         }
     } catch (e) {
@@ -1831,6 +1468,41 @@ function loadGameState() {
 function clearGameState() {
     try {
         localStorage.removeItem(STORAGE_KEY);
+        Object.assign(gameState, {
+            mode: 'online',
+            hostName: '',
+            shakeCount: 10,
+            roomCode: '',
+            roomLink: '',
+            denominations: {},
+            specialPrizes: {},
+            denominationsBackup: {},
+            specialPrizesBackup: {},
+            players: [],
+            waitingPlayers: [],
+            winners: [],
+            recentActivity: [],
+            currentPlayer: '',
+            currentPrize: '',
+            currentPrizeType: 'money',
+            isShaking: false,
+            remainingShakes: 10,
+            currentScreen: 'home',
+            isHost: false,
+            gameStarted: false,
+            roomStatus: 'idle',
+            roomCreatedAt: 0,
+            playerRoomCode: ''
+        });
+        navigationHistory = ['home'];
+        playersListenerStarted = false;
+        playersListenerRoom = null;
+        
+        // DETACH ROOM STATUS LISTENER
+        if (roomStatusListener) {
+            roomStatusListener();
+            roomStatusListener = null;
+        }
     } catch (e) {
         console.error('Error clearing:', e);
     }
@@ -1845,65 +1517,54 @@ function resetApp() {
 }
 
 function restoreAdminDashboard() {
-    try {// ✅ restore backup nếu reload
-if (!gameState.denominationsBackup || Object.keys(gameState.denominationsBackup).length === 0) {
-    gameState.denominationsBackup = JSON.parse(JSON.stringify(gameState.denominations));
-}
-
-if (!gameState.specialPrizesBackup || Object.keys(gameState.specialPrizesBackup).length === 0) {
-    gameState.specialPrizesBackup = JSON.parse(JSON.stringify(gameState.specialPrizes));
-}
+    try {
         if (!gameState.roomCode || !gameState.roomLink) {
             throw new Error('Missing room data');
         }
         
-        document.getElementById('room-code-display').textContent = gameState.roomCode;
-        document.getElementById('room-code-display-2').textContent = gameState.roomCode;
-        
-        const qrcodeElement = document.getElementById('qrcode');
-        if (!qrcodeElement) {
-            throw new Error('QR code element not found');
+        if (!gameState.denominationsBackup || Object.keys(gameState.denominationsBackup).length === 0) {
+            gameState.denominationsBackup = JSON.parse(JSON.stringify(gameState.denominations));
+        }
+
+        if (!gameState.specialPrizesBackup || Object.keys(gameState.specialPrizesBackup).length === 0) {
+            gameState.specialPrizesBackup = JSON.parse(JSON.stringify(gameState.specialPrizes));
         }
         
-        qrcodeElement.innerHTML = '';
-        new QRCode(qrcodeElement, {
-            text: gameState.roomLink,
-            width: 180,
-            height: 180,
-            colorDark: "#000000",
-            colorLight: "#ffffff",
-            correctLevel: QRCode.CorrectLevel.H
-        });
+        const displayElements = [
+            document.getElementById('room-code-display'),
+            document.getElementById('room-code-display-2')
+        ];
         
-        // Convert canvas to img after a short delay
-        setTimeout(() => {
-            convertQRCanvasToImage();
-        }, 100);
+        displayElements.forEach(el => {
+            if (el) el.textContent = gameState.roomCode;
+        });
         
         updatePlayerList();
         updatePrizeInventory();
         updateWaitingPlayerList();
         updateRecentActivityList();
+        updateRoomStatus();
     } catch (e) {
         console.error('Error restoring dashboard:', e);
         throw e;
     }
 }
 
-// Screen navigation
-function showScreen(screenId) {
-    document.querySelectorAll('.screen').forEach(screen => {
-        screen.classList.add('hidden');
-    });
-    const targetScreen = document.getElementById('screen-' + screenId);
-    if (targetScreen) {
-        targetScreen.classList.remove('hidden');
+// ========== 4. FIREWORKS ==========
+function createSparks() {
+    const fireworks = document.getElementById('fireworks');
+    if (!fireworks) return;
+    for (let i = 0; i < 30; i++) {
+        const spark = document.createElement('div');
+        spark.className = 'spark';
+        spark.style.left = Math.random() * 100 + '%';
+        spark.style.top = Math.random() * 100 + '%';
+        spark.style.animationDelay = Math.random() * 3 + 's';
+        fireworks.appendChild(spark);
     }
-    
-    setTimeout(() => initTouchSupport(), 100);
 }
 
-// Denomination selection
+// ========== 5. DENOMINATION MANAGEMENT ==========
 function selectDenom(value) {
     if (!gameState.denominations[value]) {
         gameState.denominations[value] = 1;
@@ -1922,7 +1583,85 @@ function addCustomDenom() {
     }
 }
 
-// Special prizes management
+function updateQuantity(denom, delta) {
+    gameState.denominations[denom] += delta;
+    if (gameState.denominations[denom] <= 0) {
+        delete gameState.denominations[denom];
+    }
+    updateDenomList();
+}
+
+function updateSpecialQuantity(prize, delta) {
+    gameState.specialPrizes[prize] += delta;
+    if (gameState.specialPrizes[prize] <= 0) {
+        delete gameState.specialPrizes[prize];
+    }
+    updateDenomList();
+}
+
+function updateDenomList() {
+    const container = document.getElementById('selected-denoms');
+    if (!container) return;
+    
+    container.innerHTML = '';
+    
+    let total = 0;
+    
+    for (const [denom, qty] of Object.entries(gameState.denominations)) {
+        const value = parseFloat(denom.replace(/[^0-9.]/g, ''));
+        const multiplier = denom.includes('K') ? 1000 : 1;
+        total += value * multiplier * qty;
+
+        const item = document.createElement('div');
+        item.className = 'selected-item';
+        item.innerHTML = `
+            <div class="selected-item-value">💰 ${denom}</div>
+            <div class="quantity-control">
+                <button class="quantity-btn" onclick="updateQuantity('${denom}', -1)">−</button>
+                <div class="quantity-display">${qty}</div>
+                <button class="quantity-btn" onclick="updateQuantity('${denom}', 1)">+</button>
+            </div>
+        `;
+        container.appendChild(item);
+    }
+    
+    for (const [prize, qty] of Object.entries(gameState.specialPrizes)) {
+        const item = document.createElement('div');
+        item.className = 'selected-item special-prize';
+        item.innerHTML = `
+            <div style="flex: 1;">
+                <div class="selected-item-type">Phần thưởng khác</div>
+                <div class="selected-item-value">🎁 ${prize}</div>
+            </div>
+            <div class="quantity-control">
+                <button class="quantity-btn" onclick="updateSpecialQuantity('${escapeHtml(prize)}', -1)">−</button>
+                <div class="quantity-display">${qty}</div>
+                <button class="quantity-btn" onclick="updateSpecialQuantity('${escapeHtml(prize)}', 1)">+</button>
+            </div>
+        `;
+        container.appendChild(item);
+    }
+
+    const budgetEl = document.getElementById('total-budget');
+    if (budgetEl) {
+        budgetEl.textContent = total.toLocaleString('vi-VN') + 'đ';
+    }
+    
+    saveGameState();
+}
+
+function escapeHtml(text) {
+    const map = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#039;'
+    };
+    return text.replace(/[&<>"']/g, m => map[m]);
+}
+
+// ========== 6. SPECIAL PRIZES ==========
 function addSpecialPrize() {
     specialPrizeCounter++;
     const container = document.getElementById('special-prizes-container');
@@ -1973,462 +1712,604 @@ function collectSpecialPrizes() {
     });
 }
 
-function updateQuantity(denom, delta) {
-    gameState.denominations[denom] += delta;
-    if (gameState.denominations[denom] <= 0) {
-        delete gameState.denominations[denom];
-    }
-    updateDenomList();
-}
-
-function updateSpecialQuantity(prize, delta) {
-    gameState.specialPrizes[prize] += delta;
-    if (gameState.specialPrizes[prize] <= 0) {
-        delete gameState.specialPrizes[prize];
-    }
-    updateDenomList();
-}
-
-function updateDenomList() {
-    const container = document.getElementById('selected-denoms');
-    container.innerHTML = '';
-    
-    let total = 0;
-    
-    // Display money prizes
-    for (const [denom, qty] of Object.entries(gameState.denominations)) {
-        const value = parseFloat(denom.replace(/[^0-9.]/g, ''));
-        const multiplier = denom.includes('K') ? 1000 : 1;
-        total += value * multiplier * qty;
-
-        const item = document.createElement('div');
-        item.className = 'selected-item';
-        item.innerHTML = `
-            <div class="selected-item-value">💰 ${denom}</div>
-            <div class="quantity-control">
-                <button class="quantity-btn" onclick="updateQuantity('${denom}', -1)">−</button>
-                <div class="quantity-display">${qty}</div>
-                <button class="quantity-btn" onclick="updateQuantity('${denom}', 1)">+</button>
-            </div>
-        `;
-        container.appendChild(item);
-    }
-    
-    // Display special prizes
-    for (const [prize, qty] of Object.entries(gameState.specialPrizes)) {
-        const item = document.createElement('div');
-        item.className = 'selected-item special-prize';
-        item.innerHTML = `
-            <div style="flex: 1;">
-                <div class="selected-item-type">Phần thưởng khác</div>
-                <div class="selected-item-value">🎁 ${prize}</div>
-            </div>
-            <div class="quantity-control">
-                <button class="quantity-btn" onclick="updateSpecialQuantity('${prize.replace(/'/g, "\\'")}', -1)">−</button>
-                <div class="quantity-display">${qty}</div>
-                <button class="quantity-btn" onclick="updateSpecialQuantity('${prize.replace(/'/g, "\\'")}', 1)">+</button>
-            </div>
-        `;
-        container.appendChild(item);
-    }
-
-    document.getElementById('total-budget').textContent = 
-        total.toLocaleString('vi-VN') + 'đ';
-    
-    saveGameState();
-}
-
-// Create room - FINAL FIX
-async function createRoom() {
-  // ✅ LẤY BUTTON BẰNG querySelector
-  const createBtn = document.querySelector('#screen-create-room .btn-primary');
-  if (createBtn) {
-    createBtn.disabled = true;
-    createBtn.textContent = '⏳ Đang tạo...';
-  }
-
-  const hostName = document.getElementById('host-name').value.trim();
-  const shakeCount = parseInt(document.getElementById('shake-count').value);
-  const mode = document.querySelector('input[name="mode"]:checked').value;
-
-  if (!hostName) {
-    alert('Vui lòng nhập tên chủ phòng!');
-    return;
-  }
-
-  collectSpecialPrizes();
-
-  if (
-    Object.keys(gameState.denominations).length === 0 &&
-    Object.keys(gameState.specialPrizes).length === 0
-  ) {
-    alert('Vui lòng chọn ít nhất một phần thưởng!');
-    return;
-  }
-
-  const roomCode = generateRoomCode();
-
-// ✅ BACKUP ĐÚNG – deep clone
-gameState.denominationsBackup = JSON.parse(JSON.stringify(gameState.denominations));
-gameState.specialPrizesBackup = JSON.parse(JSON.stringify(gameState.specialPrizes));
-
-gameState.hostName = hostName;
-gameState.shakeCount = shakeCount;
-gameState.remainingShakes = shakeCount;
-gameState.mode = mode;
-gameState.roomCode = roomCode;
-gameState.roomLink =
-  location.origin + location.pathname + '?room=' + roomCode;
-gameState.isHost = true;
-gameState.gameStarted = false;
-
-saveGameState();
-  const { database, ref, set } = window.firebaseDB;
-
-  try {
-    await set(ref(database, `rooms/${roomCode}`), {
-      hostName,
-      shakeCount,
-      remainingShakes: shakeCount,
-      mode,
-      denominations: gameState.denominations,
-      specialPrizes: gameState.specialPrizes,
-      gameStarted: false,
-      createdAt: Date.now(),
-      players: {}
-    });
-  } catch (err) {
-    console.error('🔥 Firebase write error:', err);
-    alert('❌ Lỗi ghi Firebase');
-    return;
-  }
-
-  navigateTo('admin');
-
-  document.getElementById('room-code-display').textContent = roomCode;
-  document.getElementById('room-code-display-2').textContent = roomCode;
-
-  const qr = document.getElementById('qrcode');
-  qr.innerHTML = '';
-  new QRCode(qr, {
-    text: gameState.roomLink,
-    width: 180,
-    height: 180
-  });
-
-  listenPlayersRealtime();
-   // ✅ RESET BUTTON (nếu có lỗi)
-  if (createBtn) {
-    createBtn.disabled = false;
-    createBtn.textContent = '🎊 TẠO PHÒNG';
-  }
-}
+// ========== 7. ROOM MANAGEMENT ==========
 function generateRoomCode() {
     return 'TET' + Math.random().toString(36).substr(2, 6).toUpperCase();
 }
 
-// Download QR code
-function downloadQRCode() {
+function showHomeWithContinue() {
+    const homeScreen = document.getElementById('screen-home');
+    if (!homeScreen) return;
+    
+    // HOST: Nút tiếp tục phòng
+    const hasActiveHostRoom = gameState.isHost && gameState.roomCode;
+    
+    if (hasActiveHostRoom) {
+        let continueBtn = homeScreen.querySelector('.continue-room-btn');
+        if (!continueBtn) {
+            continueBtn = document.createElement('button');
+            continueBtn.className = 'btn btn-primary continue-room-btn';
+            continueBtn.style.marginBottom = '12px';
+            continueBtn.onclick = continueOldRoom;
+            
+            const createBtn = homeScreen.querySelector('.btn-primary');
+            if (createBtn) {
+                createBtn.parentNode.insertBefore(continueBtn, createBtn);
+            }
+        }
+        continueBtn.innerHTML = `🔄 TIẾP TỤC PHÒNG ${gameState.roomCode}`;
+        continueBtn.style.display = 'block';
+    } else {
+        const continueBtn = homeScreen.querySelector('.continue-room-btn');
+        if (continueBtn) {
+            continueBtn.remove();
+        }
+    }
+    
+    // PLAYER: Nút tiếp tục phòng đã tham gia
+    const hasActivePlayerRoom = !gameState.isHost && gameState.playerRoomCode;
+    
+    if (hasActivePlayerRoom) {
+        let playerContinueBtn = homeScreen.querySelector('.continue-player-room-btn');
+        if (!playerContinueBtn) {
+            playerContinueBtn = document.createElement('button');
+            playerContinueBtn.className = 'btn btn-primary continue-player-room-btn';
+            playerContinueBtn.style.marginBottom = '12px';
+            playerContinueBtn.onclick = continuePlayerRoom;
+            
+            const joinBtn = homeScreen.querySelector('.btn-secondary');
+            if (joinBtn) {
+                joinBtn.parentNode.insertBefore(playerContinueBtn, joinBtn);
+            }
+        }
+        playerContinueBtn.innerHTML = `🔄 QUAY LẠI PHÒNG ${gameState.playerRoomCode}`;
+        playerContinueBtn.style.display = 'block';
+    } else {
+        const playerContinueBtn = homeScreen.querySelector('.continue-player-room-btn');
+        if (playerContinueBtn) {
+            playerContinueBtn.remove();
+        }
+    }
+}
+
+async function continuePlayerRoom() {
+    const { database, ref, get } = window.firebaseDB;
+    
     try {
-        const qrcodeElement = document.getElementById('qrcode');
+        const roomSnap = await get(ref(database, `rooms/${gameState.playerRoomCode}`));
         
-        if (!qrcodeElement) {
-            alert('❌ Không tìm thấy QR code!');
+        if (!roomSnap.exists()) {
+            alert('❌ Phòng đã bị xóa hoặc không tồn tại');
+            clearGameState();
+            showHomeWithContinue();
             return;
         }
         
-        // QRCode.js renders to canvas, try to get canvas first
-        let canvas = qrcodeElement.querySelector('canvas');
+        const roomData = roomSnap.val();
         
-        if (!canvas) {
-            // Fallback: try to get img element
-            const img = qrcodeElement.querySelector('img');
-            if (img) {
-                // Convert img to canvas - use naturalWidth/Height to get original size
-                canvas = document.createElement('canvas');
-                canvas.width = img.naturalWidth || img.width || 180;
-                canvas.height = img.naturalHeight || img.height || 180;
-                const ctx = canvas.getContext('2d');
-                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-            }
-        }
+        // Restore room data
+        gameState.roomCode = gameState.playerRoomCode;
+        gameState.denominations = roomData.denominations || {};
+        gameState.specialPrizes = roomData.specialPrizes || {};
+        gameState.denominationsBackup = JSON.parse(JSON.stringify(gameState.denominations));
+        gameState.specialPrizesBackup = JSON.parse(JSON.stringify(gameState.specialPrizes));
+        gameState.gameStarted = roomData.gameStarted || false;
         
-        if (!canvas) {
-            alert('❌ QR chưa sẵn sàng! Vui lòng thử lại.');
-            return;
-        }
+        saveGameState();
+        listenPlayersRealtime();
+        listenRoomStatus();
         
-        // Convert canvas to data URL (no padding - keep original size)
-        const dataURL = canvas.toDataURL('image/png');
-        
-        // Detect iOS Safari
-        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-        const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-        
-        if (isIOS || isSafari) {
-            // For iOS Safari: Open in new tab so user can long-press to save
-            const newTab = window.open();
-            if (newTab) {
-                newTab.document.write(`
-                    <!DOCTYPE html>
-                    <html>
-                    <head>
-                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                        <title>QR Code - Mã phòng ${gameState.roomCode}</title>
-                        <style>
-                            body {
-                                margin: 0;
-                                padding: 20px;
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                justify-content: center;
-                                min-height: 100vh;
-                                background: #f5f5f5;
-                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-                            }
-                            img {
-                                max-width: 90%;
-                                height: auto;
-                                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-                                border-radius: 10px;
-                                background: white;
-                                padding: 20px;
-                            }
-                            p {
-                                margin-top: 20px;
-                                color: #666;
-                                text-align: center;
-                                font-size: 14px;
-                            }
-                            .code {
-                                font-weight: bold;
-                                color: #D4202F;
-                                font-size: 18px;
-                                margin-top: 10px;
-                            }
-                        </style>
-                    </head>
-                    <body>
-                        <img src="${dataURL}" alt="QR Code">
-                        <p>Mã phòng: <span class="code">${gameState.roomCode}</span></p>
-                        <p>📱 Nhấn giữ vào ảnh để lưu về điện thoại</p>
-                    </body>
-                    </html>
-                `);
-                newTab.document.close();
-            } else {
-                alert('⚠️ Vui lòng cho phép popup để tải QR!');
-            }
+        if (gameState.gameStarted) {
+            navigateTo('shake');
         } else {
-            // For other browsers: Direct download
-            const link = document.createElement('a');
-            link.download = `QR-LiXi-${gameState.roomCode}.png`;
-            link.href = dataURL;
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            alert('✅ Đã tải QR code!');
+            navigateTo('waiting');
+        }
+    } catch (err) {
+        console.error('Error continuing player room:', err);
+        alert('❌ Lỗi khi quay lại phòng');
+    }
+}
+
+function listenRoomStatus() {
+    if (!gameState.playerRoomCode || gameState.isHost) return;
+    
+    const { database, ref, onValue } = window.firebaseDB;
+    
+    // Detach old listener
+    if (roomStatusListener) {
+        roomStatusListener();
+    }
+    
+    const roomRef = ref(database, `rooms/${gameState.playerRoomCode}`);
+    
+    const unsubscribe = onValue(roomRef, (snapshot) => {
+        if (!snapshot.exists()) {
+            alert('🚫 Phòng đã bị hủy bởi chủ phòng');
+            clearGameState();
+            navigateTo('home', true);
+            showHomeWithContinue();
+        }
+    });
+    
+    roomStatusListener = unsubscribe;
+}
+
+window.addEventListener('click', function(e) {
+    if (e.target && e.target.textContent && e.target.textContent.includes('TẠO PHÒNG')) {
+        const hasOldRoom = gameState.isHost && gameState.roomCode;
+        
+        if (hasOldRoom) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const choice = confirm(
+                `Bạn có phòng "${gameState.roomCode}" đang tồn tại.\n\n` +
+                `✅ OK = Tiếp tục phòng cũ\n` +
+                `❌ Cancel = Tạo phòng mới`
+            );
+            
+            if (choice) {
+                continueOldRoom();
+            } else {
+                resetForNewRoom();
+                resetCreateRoomForm();
+                navigateTo('create-room');
+            }
+            return false;
+        } else {
+            resetCreateRoomForm();
+        }
+    }
+});
+
+function continueOldRoom() {
+    if (gameState.gameStarted) {
+        navigateTo('host-after-start');
+    } else {
+        navigateTo('admin');
+    }
+    restoreAdminDashboard();
+    listenPlayersRealtime();
+}
+
+function resetForNewRoom() {
+    const wasHost = gameState.isHost;
+    clearGameState();
+    gameState.isHost = wasHost;
+    saveGameState();
+    
+    showHomeWithContinue();
+}
+
+function resetCreateRoomForm() {
+    setTimeout(() => {
+        const hostNameInput = document.getElementById('host-name');
+        if (hostNameInput) hostNameInput.value = '';
+        
+        const shakeCountInput = document.getElementById('shake-count');
+        if (shakeCountInput) shakeCountInput.value = '10';
+        
+        const modeOnline = document.getElementById('mode-online');
+        if (modeOnline) modeOnline.checked = true;
+        
+        gameState.denominations = {};
+        gameState.specialPrizes = {};
+        
+        const specialPrizesContainer = document.getElementById('special-prizes-container');
+        if (specialPrizesContainer) {
+            specialPrizesContainer.innerHTML = '';
         }
         
-    } catch (error) {
-        console.error('Error downloading QR:', error);
-        alert('❌ Có lỗi khi tải QR! Vui lòng thử lại.');
-    }
+        specialPrizeCounter = 0;
+        updateDenomList();
+    }, 100);
 }
 
-// Convert QR canvas to image for better mobile long-press support
-function convertQRCanvasToImage() {
-    try {
-        const qrcodeElement = document.getElementById('qrcode');
-        if (!qrcodeElement) return;
-        
-        const canvas = qrcodeElement.querySelector('canvas');
-        if (!canvas) return;
-        
-        // Get canvas data
-        const dataURL = canvas.toDataURL('image/png');
-        
-        // Create new img element
-        const img = document.createElement('img');
-        img.src = dataURL;
-        img.alt = 'QR Code';
-        img.style.width = '100%';
-        img.style.height = '100%';
-        img.style.display = 'block';
-        
-        // Replace canvas with img
-        qrcodeElement.innerHTML = '';
-        qrcodeElement.appendChild(img);
-        
-    } catch (error) {
-        console.error('Error converting QR canvas to image:', error);
-    }
-}
-
-// Join room
-async function joinRoom() {
-  const roomCode = document.getElementById('join-room-code').value
-    .trim()
-    .toUpperCase();
-
-  if (!roomCode) {
-    alert('Vui lòng nhập mã phòng!');
-    return;
-  }
-
-  const joinBtn = document.querySelector('#screen-join-room .btn-primary');
-  if (joinBtn) {
-    joinBtn.disabled = true;
-    joinBtn.textContent = '⏳ Đang kiểm tra...';
-  }
-
-  const { database, ref, get } = window.firebaseDB;
-
-  try {
-    console.log('🔍 Checking room:', roomCode);
-
-    const roomSnap = await get(ref(database, `rooms/${roomCode}`));
-
-    // ❌ PHÒNG KHÔNG TỒN TẠI → CHỈ THOÁT, KHÔNG ĐỌC DATA
-    if (!roomSnap.exists()) {
-      alert('❌ Phòng không tồn tại');
-
-      if (joinBtn) {
-        joinBtn.disabled = false;
-        joinBtn.textContent = '🎉 THAM GIA';
-      }
-      return;
+async function createRoom() {
+    const createBtn = document.querySelector('#screen-create-room .btn-primary');
+    if (createBtn) {
+        createBtn.disabled = true;
+        createBtn.textContent = '⏳ Đang tạo...';
     }
 
-    // ✅ PHÒNG TỒN TẠI → MỚI ĐƯỢC LOAD DATA
-    const roomData = roomSnap.val();
+    const hostName = document.getElementById('host-name').value.trim();
+    const shakeCount = parseInt(document.getElementById('shake-count').value);
+    const mode = document.querySelector('input[name="mode"]:checked').value;
 
-    // ✅ LOAD PHẦN THƯỞNG TỪ FIREBASE
-    gameState.denominations = roomData.denominations || {};
-    gameState.specialPrizes = roomData.specialPrizes || {};
+    if (!hostName) {
+        alert('Vui lòng nhập tên chủ phòng!');
+        if (createBtn) {
+            createBtn.disabled = false;
+            createBtn.textContent = '🎊 TẠO PHÒNG';
+        }
+        return;
+    }
 
-    // ✅ BACKUP ĐỂ INVENTORY + DRAW ĐÚNG
+    collectSpecialPrizes();
+
+    if (
+        Object.keys(gameState.denominations).length === 0 &&
+        Object.keys(gameState.specialPrizes).length === 0
+    ) {
+        alert('Vui lòng chọn ít nhất một phần thưởng!');
+        if (createBtn) {
+            createBtn.disabled = false;
+            createBtn.textContent = '🎊 TẠO PHÒNG';
+        }
+        return;
+    }
+
+    const roomCode = generateRoomCode();
+
+    gameState.players = [];
+    gameState.winners = [];
+    gameState.recentActivity = [];
+    
     gameState.denominationsBackup = JSON.parse(JSON.stringify(gameState.denominations));
     gameState.specialPrizesBackup = JSON.parse(JSON.stringify(gameState.specialPrizes));
-
+    gameState.hostName = hostName;
+    gameState.shakeCount = shakeCount;
+    gameState.remainingShakes = shakeCount;
+    gameState.mode = mode;
     gameState.roomCode = roomCode;
-    gameState.isHost = false;
+    gameState.roomLink = location.origin + location.pathname + '?room=' + roomCode;
+    gameState.isHost = true;
+    gameState.gameStarted = false;
+    gameState.roomStatus = 'idle';
+    gameState.roomCreatedAt = Date.now();
 
     saveGameState();
-    navigateTo('enter-name');
 
-  } catch (err) {
-    console.error('🔥 Firebase error:', err);
-    alert('❌ Lỗi kiểm tra phòng: ' + err.message);
+    const { database, ref, set } = window.firebaseDB;
 
-    if (joinBtn) {
-      joinBtn.disabled = false;
-      joinBtn.textContent = '🎉 THAM GIA';
+    try {
+        await set(ref(database, `rooms/${roomCode}`), {
+            hostName,
+            shakeCount,
+            remainingShakes: shakeCount,
+            mode,
+            denominations: gameState.denominations,
+            specialPrizes: gameState.specialPrizes,
+            gameStarted: false,
+            roomStatus: 'idle',
+            createdAt: Date.now(),
+            players: {},
+            recentActivity: {}
+        });
+    } catch (err) {
+        console.error('🔥 Firebase write error:', err);
+        alert('❌ Lỗi ghi Firebase: ' + err.message);
+        if (createBtn) {
+            createBtn.disabled = false;
+            createBtn.textContent = '🎊 TẠO PHÒNG';
+        }
+        return;
     }
-  }
-}
-async function submitPlayerName() {
-  const playerName = document.getElementById('player-name').value.trim();
-  
-  if (!playerName) {
-    alert('Vui lòng nhập tên của bạn!');
-    return;
-  }
 
-  // ✅ LẤY BUTTON BẰNG querySelector
-  const submitBtn = document.querySelector('#screen-enter-name .btn-primary');
-  if (submitBtn) {
-    submitBtn.disabled = true;
-    submitBtn.textContent = '⏳ Đang tham gia...';
-  }
+    navigateTo('admin');
 
-  const { database, ref, push, set } = window.firebaseDB;
-
-  gameState.currentPlayer = playerName;
-  saveGameState();
-
-  try {
-    console.log('👤 Adding player:', playerName);
+    const displayElements = [
+        document.getElementById('room-code-display'),
+        document.getElementById('room-code-display-2')
+    ];
     
-    const playerRef = push(ref(database, `rooms/${gameState.roomCode}/players`));
-
-    const playerData = {
-      name: playerName,
-      joinedAt: Date.now(),
-      status: 'waiting'
-    };
-
-    await set(playerRef, playerData);
-    
-    console.log('✅ Player added successfully');
-    
-    listenPlayersRealtime();
-
-    navigateTo('welcome');
-    document.getElementById('welcome-name').textContent = playerName;
-
-  } catch (err) {
-    console.error('🔥 Firebase error:', err);
-    alert('❌ Lỗi tham gia phòng: ' + err.message);
-    
-    // ✅ RESET BUTTON
-    if (submitBtn) {
-      submitBtn.disabled = false;
-      submitBtn.textContent = '✅ XÁC NHẬN';
-    }
-  }
-}
-// Start game
-async function startGame() {
-  if (!gameState.roomCode) return;
-
-  const { database, ref, update } = window.firebaseDB;
-
-  try {
-    await update(ref(database, `rooms/${gameState.roomCode}`), {
-      gameStarted: true,
-      startedAt: Date.now()
+    displayElements.forEach(el => {
+        if (el) el.textContent = roomCode;
     });
 
-    gameState.gameStarted = true;
+    listenPlayersRealtime();
+    
+    if (createBtn) {
+        createBtn.disabled = false;
+        createBtn.textContent = '🎊 TẠO PHÒNG';
+    }
+}
+
+async function joinRoom() {
+    const roomCode = document.getElementById('join-room-code').value.trim().toUpperCase();
+
+    if (!roomCode) {
+        alert('Vui lòng nhập mã phòng!');
+        return;
+    }
+
+    const joinBtn = document.querySelector('#screen-join-room .btn-primary');
+    if (joinBtn) {
+        joinBtn.disabled = true;
+        joinBtn.textContent = '⏳ Đang kiểm tra...';
+    }
+
+    const { database, ref, get } = window.firebaseDB;
+
+    try {
+        const roomSnap = await get(ref(database, `rooms/${roomCode}`));
+
+        if (!roomSnap.exists()) {
+            alert('❌ Phòng không tồn tại');
+            if (joinBtn) {
+                joinBtn.disabled = false;
+                joinBtn.textContent = '🎉 THAM GIA';
+            }
+            return;
+        }
+
+        const roomData = roomSnap.val();
+
+        if (roomData.gameStarted) {
+            alert('❌ Phòng đã bắt đầu, không thể tham gia!');
+            if (joinBtn) {
+                joinBtn.disabled = false;
+                joinBtn.textContent = '🎉 THAM GIA';
+            }
+            return;
+        }
+
+        clearGameState();
+        
+        gameState.denominations = roomData.denominations || {};
+        gameState.specialPrizes = roomData.specialPrizes || {};
+        gameState.denominationsBackup = JSON.parse(JSON.stringify(gameState.denominations));
+        gameState.specialPrizesBackup = JSON.parse(JSON.stringify(gameState.specialPrizes));
+        gameState.roomCode = roomCode;
+        gameState.playerRoomCode = roomCode;
+        gameState.isHost = false;
+
+        saveGameState();
+        navigateTo('enter-name');
+
+    } catch (err) {
+        console.error('🔥 Firebase error:', err);
+        alert('❌ Lỗi kiểm tra phòng: ' + err.message);
+        if (joinBtn) {
+            joinBtn.disabled = false;
+            joinBtn.textContent = '🎉 THAM GIA';
+        }
+    }
+}
+
+async function submitPlayerName() {
+    const playerName = document.getElementById('player-name').value.trim();
+    
+    if (!playerName) {
+        alert('Vui lòng nhập tên của bạn!');
+        return;
+    }
+
+    const submitBtn = document.querySelector('#screen-enter-name .btn-primary');
+    if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = '⏳ Đang tham gia...';
+    }
+
+    const { database, ref, push, set, get } = window.firebaseDB;
+
+    try {
+        const roomSnap = await get(ref(database, `rooms/${gameState.roomCode}`));
+        if (roomSnap.exists() && roomSnap.val().gameStarted) {
+            alert('❌ Phòng đã bắt đầu, không thể tham gia!');
+            if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.textContent = '✅ XÁC NHẬN';
+            }
+            navigateTo('home', true);
+            return;
+        }
+    } catch (err) {
+        console.error('Error checking room:', err);
+    }
+
+    gameState.currentPlayer = playerName;
     saveGameState();
 
-    navigateTo('host-after-start', true);
-  } catch (e) {
-    console.error('Start game error:', e);
-    alert('❌ Không thể bắt đầu game');
-  }
+    try {
+        const playerRef = push(ref(database, `rooms/${gameState.roomCode}/players`));
+
+        await set(playerRef, {
+            name: playerName,
+            joinedAt: Date.now(),
+            status: 'waiting'
+        });
+        
+        listenPlayersRealtime();
+        listenRoomStatus();
+        navigateTo('welcome');
+        const welcomeNameEl = document.getElementById('welcome-name');
+        if (welcomeNameEl) welcomeNameEl.textContent = playerName;
+
+    } catch (err) {
+        console.error('🔥 Firebase error:', err);
+        alert('❌ Lỗi tham gia phòng: ' + err.message);
+        
+        if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = '✅ XÁC NHẬN';
+        }
+    }
 }
-// Host join game
+
+async function startGame() {
+    if (!gameState.roomCode) return;
+
+    const { database, ref, update } = window.firebaseDB;
+
+    try {
+        await update(ref(database, `rooms/${gameState.roomCode}`), {
+            gameStarted: true,
+            roomStatus: 'active',
+            startedAt: Date.now()
+        });
+
+        gameState.gameStarted = true;
+        gameState.roomStatus = 'active';
+        saveGameState();
+
+        navigateTo('host-after-start', true);
+    } catch (e) {
+        console.error('Start game error:', e);
+        alert('❌ Không thể bắt đầu game');
+    }
+}
+
 function hostJoinGame() {
     gameState.currentPlayer = gameState.hostName;
+    gameState.remainingShakes = gameState.shakeCount;
+    saveGameState();
     navigateTo('shake');
-    document.getElementById('remaining-shakes').textContent = gameState.remainingShakes;
+    const remainingEl = document.getElementById('remaining-shakes');
+    if (remainingEl) remainingEl.textContent = gameState.remainingShakes;
 }
 
-// Tab switching
-function switchTab(tabName) {
-    document.querySelectorAll('.tab-btn').forEach(btn => {
-        btn.classList.remove('active');
+function confirmBackFromStarted() {
+    const choice = confirm(
+        '🔙 Bạn muốn quay lại?\n\n' +
+        '✅ OK = Lưu phòng và về trang chủ\n' +
+        '❌ Cancel = Ở lại màn hình này'
+    );
+    
+    if (choice) {
+        saveGameState();
+        navigateTo('home', true);
+        showHomeWithContinue();
+    }
+}
+
+async function closeRoom() {
+    if (!confirm('⚠️ Bạn có chắc muốn HỦY PHÒNG?\n\nPhòng sẽ bị xóa hoàn toàn và không thể khôi phục!')) return;
+    
+    const { database, ref, remove } = window.firebaseDB;
+    
+    try {
+        await remove(ref(database, `rooms/${gameState.roomCode}`));
+        
+        clearGameState();
+        
+        alert('✅ Đã hủy phòng thành công');
+        navigateTo('home', true);
+        showHomeWithContinue();
+    } catch (e) {
+        console.error('Error closing room:', e);
+        alert('❌ Không thể hủy phòng');
+    }
+}
+
+function injectCancelButton() {
+    const observeScreen = document.getElementById('screen-host-observe');
+    if (!observeScreen) return;
+    
+    const shareBtn = Array.from(observeScreen.querySelectorAll('.btn')).find(btn => 
+        btn.textContent.includes('MỜI THÊM BẠN') || btn.textContent.includes('MỜI BẠN')
+    );
+    
+    if (!shareBtn) return;
+    
+    if (observeScreen.querySelector('.cancel-room-btn')) return;
+    
+    const cancelBtn = document.createElement('button');
+    cancelBtn.className = 'btn cancel-room-btn';
+    cancelBtn.style.cssText = 'background: #FF5722; color: white; margin-top: 12px;';
+    cancelBtn.innerHTML = '🗑️ HỦY PHÒNG';
+    cancelBtn.onclick = closeRoom;
+    
+    shareBtn.parentNode.insertBefore(cancelBtn, shareBtn.nextSibling);
+}
+
+function injectStartedBackButton() {
+    const startedScreen = document.getElementById('screen-started');
+    if (!startedScreen) return;
+    
+    if (startedScreen.querySelector('.back-btn')) return;
+    
+    const backBtn = document.createElement('button');
+    backBtn.className = 'back-btn';
+    backBtn.innerHTML = '←';
+    backBtn.onclick = confirmBackFromStarted;
+    
+    startedScreen.insertBefore(backBtn, startedScreen.firstChild);
+}
+
+function updateRoomStatus() {
+    const statusEl = document.getElementById('room-status-indicator');
+    if (!statusEl) return;
+    
+    let statusHTML = '';
+    
+    if (!gameState.gameStarted) {
+        statusHTML = '<div style="background: #FFC107; color: white; padding: 8px 16px; border-radius: 20px; display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700;"><span>⏸️</span> Chưa bắt đầu</div>';
+    } else if (gameState.roomStatus === 'active') {
+        statusHTML = '<div style="background: #4CAF50; color: white; padding: 8px 16px; border-radius: 20px; display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700;"><span>▶️</span> Đang diễn ra</div>';
+    } else if (gameState.roomStatus === 'closed') {
+        statusHTML = '<div style="background: #9E9E9E; color: white; padding: 8px 16px; border-radius: 20px; display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700;"><span>⏹️</span> Đã kết thúc</div>';
+    }
+    
+    statusEl.innerHTML = statusHTML;
+}
+
+// ========== 8. PLAYER MANAGEMENT ==========
+function listenPlayersRealtime() {
+    if (playersListenerStarted && playersListenerRoom === gameState.roomCode) return;
+
+    playersListenerStarted = true;
+    playersListenerRoom = gameState.roomCode;
+
+    const { database, ref, onValue } = window.firebaseDB;
+
+    onValue(ref(database, `rooms/${gameState.roomCode}/players`), (snapshot) => {
+        const data = snapshot.val();
+        gameState.players = data ? Object.values(data) : [];
+        updatePlayerList();
+        updateWaitingPlayerList();
     });
-    document.querySelectorAll('.tab-content').forEach(content => {
-        content.classList.remove('active');
+
+    onValue(ref(database, `rooms/${gameState.roomCode}/gameStarted`), (snapshot) => {
+        const started = snapshot.val();
+        if (started && !gameState.isHost) {
+            gameState.gameStarted = true;
+            saveGameState();
+            navigateTo('started', true);
+        }
+    });
+
+    onValue(ref(database, `rooms/${gameState.roomCode}/recentActivity`), (snapshot) => {
+        const data = snapshot.val();
+        if (!data) {
+            gameState.recentActivity = [];
+        } else {
+            gameState.recentActivity = Object.values(data).sort((a, b) => b.timestamp - a.timestamp);
+        }
+        updateRecentActivityList();
     });
     
-    event.target.classList.add('active');
-    document.getElementById('tab-' + tabName).classList.add('active');
+    onValue(ref(database, `rooms/${gameState.roomCode}/roomStatus`), (snapshot) => {
+        const status = snapshot.val();
+        if (status) {
+            gameState.roomStatus = status;
+            updateRoomStatus();
+        }
+    });
 }
 
-// Update waiting player list
+async function updatePlayerInFirebase(playerName, data) {
+    const { database, ref, get, update } = window.firebaseDB;
+
+    const playersRef = ref(database, `rooms/${gameState.roomCode}/players`);
+    const snap = await get(playersRef);
+    if (!snap.exists()) return;
+
+    const players = snap.val();
+
+    for (const key in players) {
+        if (players[key].name === playerName) {
+            await update(ref(database, `rooms/${gameState.roomCode}/players/${key}`), data);
+            break;
+        }
+    }
+}
+
 function updatePlayerList() {
     const container = document.getElementById('player-list');
     const countEl = document.getElementById('player-count');
 
-    if (!container || !countEl) {
-        console.warn('❌ player-list hoặc player-count không tồn tại');
-        return;
-    }
+    if (!container || !countEl) return;
 
     container.innerHTML = '';
 
@@ -2447,17 +2328,28 @@ function updatePlayerList() {
         const item = document.createElement('div');
         item.className = 'player-item';
 
-        const statusClass = player.status === 'claimed' ? '' : 'waiting';
-        const statusText = player.status === 'claimed' ? 'Đã nhận' : 'Đang chờ';
+        let statusClass = '';
+        let statusText = '';
+        let statusIcon = '';
+        
+        if (player.status === 'claimed') {
+            statusClass = '';
+            statusText = 'Đã nhận';
+            statusIcon = '✅';
+        } else if (player.status === 'playing') {
+            statusClass = 'playing';
+            statusText = 'Đang chơi';
+            statusIcon = '🎮';
+        } else {
+            statusClass = 'waiting';
+            statusText = 'Đang chờ';
+            statusIcon = '⏳';
+        }
 
         item.innerHTML = `
-            <div class="player-avatar">
-                ${player.name.charAt(0).toUpperCase()}
-            </div>
-            <div class="player-name">${player.name}</div>
-            <div class="player-status ${statusClass}">
-                ${statusText}
-            </div>
+            <div class="player-avatar">${player.name.charAt(0).toUpperCase()}</div>
+            <div class="player-name">${escapeHtml(player.name)}</div>
+            <div class="player-status ${statusClass}">${statusIcon} ${statusText}</div>
         `;
 
         container.appendChild(item);
@@ -2465,8 +2357,11 @@ function updatePlayerList() {
 
     countEl.textContent = gameState.players.length.toString();
 }
+
 function updateWaitingPlayerList() {
     const container = document.getElementById('waiting-player-list');
+    if (!container) return;
+    
     container.innerHTML = '';
 
     const playingPlayers = gameState.players.filter(p => p.status === 'waiting');
@@ -2478,7 +2373,8 @@ function updateWaitingPlayerList() {
                 <div class="empty-state-text">Không có người đang chơi</div>
             </div>
         `;
-        document.getElementById('waiting-player-count').textContent = '0';
+        const countEl = document.getElementById('waiting-player-count');
+        if (countEl) countEl.textContent = '0';
         return;
     }
 
@@ -2488,19 +2384,21 @@ function updateWaitingPlayerList() {
 
         item.innerHTML = `
             <div class="player-avatar">${player.name.charAt(0).toUpperCase()}</div>
-            <div class="player-name">${player.name}</div>
-            <div class="player-status playing">Đang chơi</div>
+            <div class="player-name">${escapeHtml(player.name)}</div>
+            <div class="player-status playing">🎮 Đang chơi</div>
         `;
 
         container.appendChild(item);
     });
 
-    document.getElementById('waiting-player-count').textContent =
-        playingPlayers.length;
+    const countEl = document.getElementById('waiting-player-count');
+    if (countEl) countEl.textContent = playingPlayers.length;
 }
-// Update recent activity list
+
 function updateRecentActivityList() {
     const container = document.getElementById('recent-activity-list');
+    if (!container) return;
+    
     container.innerHTML = '';
 
     if (!gameState.recentActivity || gameState.recentActivity.length === 0) {
@@ -2528,11 +2426,11 @@ function updateRecentActivityList() {
             <div class="activity-time">${time}</div>
             <div class="activity-content">
                 <div class="activity-player">
-                    👤 ${activity.name}
+                    👤 ${escapeHtml(activity.name)}
                     <span class="activity-badge new">MỚI</span>
                 </div>
                 <div class="activity-prize ${isSpecial ? 'special' : ''}">
-                    ${isSpecial ? '🎁' : '💰'} ${activity.prize}
+                    ${isSpecial ? '🎁' : '💰'} ${escapeHtml(activity.prize)}
                 </div>
             </div>
         `;
@@ -2540,18 +2438,73 @@ function updateRecentActivityList() {
         container.appendChild(item);
     });
 }
-// Shake functionality
-let shakeTimeout;
-let shakeStartTime;
 
+function updatePrizeInventory() {
+    const container = document.getElementById('prize-inventory');
+    if (!container) return;
+
+    container.innerHTML = '';
+
+    if (!gameState.denominationsBackup || Object.keys(gameState.denominationsBackup).length === 0) {
+        gameState.denominationsBackup = JSON.parse(JSON.stringify(gameState.denominations));
+    }
+
+    if (!gameState.specialPrizesBackup || Object.keys(gameState.specialPrizesBackup).length === 0) {
+        gameState.specialPrizesBackup = JSON.parse(JSON.stringify(gameState.specialPrizes));
+    }
+    
+    const allMoneyPrizes = new Set([
+        ...Object.keys(gameState.denominations),
+        ...Object.keys(gameState.denominationsBackup)
+    ]);
+    
+    for (const denom of allMoneyPrizes) {
+        const qty = gameState.denominations[denom] || 0;
+        const total = gameState.denominationsBackup[denom] || qty;
+        const claimed = total - qty;
+        
+        const item = document.createElement('div');
+        item.className = 'prize-item';
+        item.innerHTML = `
+            <div class="prize-value">💰 ${escapeHtml(denom)}</div>
+            <div class="prize-count ${claimed > 0 ? 'claimed' : ''}">${claimed} / ${total}</div>
+        `;
+        container.appendChild(item);
+    }
+    
+    const allSpecialPrizes = new Set([
+        ...Object.keys(gameState.specialPrizes),
+        ...Object.keys(gameState.specialPrizesBackup)
+    ]);
+    
+    for (const prize of allSpecialPrizes) {
+        const qty = gameState.specialPrizes[prize] || 0;
+        const total = gameState.specialPrizesBackup[prize] || qty;
+        const claimed = total - qty;
+        
+        const item = document.createElement('div');
+        item.className = 'prize-item special';
+        item.innerHTML = `
+            <div class="prize-value">
+                🎁 ${escapeHtml(prize)}
+                <span class="prize-type-badge">Khác</span>
+            </div>
+            <div class="prize-count ${claimed > 0 ? 'claimed' : ''}">${claimed} / ${total}</div>
+        `;
+        container.appendChild(item);
+    }
+}
+
+// ========== 9. SHAKE & PRIZE ==========
 function startShaking() {
     if (gameState.isShaking) return;
     
     gameState.isShaking = true;
     shakeStartTime = Date.now();
     const envelope = document.getElementById('envelope');
-    envelope.classList.add('shaking');
-    document.getElementById('shake-text').textContent = '🎊 Đang lắc...';
+    if (envelope) envelope.classList.add('shaking');
+    const shakeText = document.getElementById('shake-text');
+    if (shakeText) shakeText.textContent = '🎊 Đang lắc...';
 
     if (typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission === 'function') {
         DeviceMotionEvent.requestPermission()
@@ -2559,23 +2512,17 @@ function startShaking() {
                 if (permissionState === 'granted') {
                     window.addEventListener('devicemotion', handleShake);
                 } else {
-                    shakeTimeout = setTimeout(() => {
-                        stopShaking();
-                    }, 3000);
+                    shakeTimeout = setTimeout(() => stopShaking(), 3000);
                 }
             })
             .catch(console.error);
     } else if (window.DeviceMotionEvent) {
         window.addEventListener('devicemotion', handleShake);
     } else {
-        shakeTimeout = setTimeout(() => {
-            stopShaking();
-        }, 3000);
+        shakeTimeout = setTimeout(() => stopShaking(), 3000);
     }
 
-    shakeTimeout = setTimeout(() => {
-        stopShaking();
-    }, 5000);
+    shakeTimeout = setTimeout(() => stopShaking(), 5000);
 }
 
 function handleShake(event) {
@@ -2583,7 +2530,6 @@ function handleShake(event) {
     if (!acceleration) return;
     
     const threshold = 12;
-    
     const totalAcceleration = Math.sqrt(
         Math.pow(acceleration.x || 0, 2) +
         Math.pow(acceleration.y || 0, 2) +
@@ -2601,7 +2547,7 @@ function handleShake(event) {
 function stopShaking() {
     gameState.isShaking = false;
     const envelope = document.getElementById('envelope');
-    envelope.classList.remove('shaking');
+    if (envelope) envelope.classList.remove('shaking');
     window.removeEventListener('devicemotion', handleShake);
     clearTimeout(shakeTimeout);
 
@@ -2609,9 +2555,6 @@ function stopShaking() {
 }
 
 async function drawPrize() {
-    console.log('🎲 Drawing prize...');
-
-    // ✅ CHECK HẾT THƯỞNG – ĐẶT Ở ĐẦU HÀM
     if (
         Object.keys(gameState.denominations).length === 0 &&
         Object.keys(gameState.specialPrizes).length === 0
@@ -2623,35 +2566,30 @@ async function drawPrize() {
 
     const prizePool = [];
 
-    // 💰 MONEY PRIZES
     for (const [denom, qty] of Object.entries(gameState.denominations)) {
         for (let i = 0; i < qty; i++) {
             prizePool.push({ prize: denom, prizeType: 'money' });
         }
     }
 
-    // 🎁 SPECIAL PRIZES
     for (const [prize, qty] of Object.entries(gameState.specialPrizes)) {
         for (let i = 0; i < qty; i++) {
             prizePool.push({ prize, prizeType: 'special' });
         }
     }
 
-    // ❗ fallback an toàn (hiếm khi xảy ra)
     if (prizePool.length === 0) {
         alert('Hết phần thưởng!');
         navigateTo('home', true);
         return;
     }
 
-    // 🎲 RANDOM
     const randomIndex = Math.floor(Math.random() * prizePool.length);
     const { prize: randomPrize, prizeType } = prizePool[randomIndex];
 
     gameState.currentPrize = randomPrize;
     gameState.currentPrizeType = prizeType;
 
-    // ✅ GIẢM SỐ LƯỢNG THẬT
     if (prizeType === 'money') {
         gameState.denominations[randomPrize]--;
         if (gameState.denominations[randomPrize] <= 0) {
@@ -2664,11 +2602,9 @@ async function drawPrize() {
         }
     }
 
-    // ✅ UPDATE SAU KHI GIẢM
     updatePrizeInventory();
     gameState.remainingShakes--;
 
-    // 📝 RECENT ACTIVITY (LOCAL)
     gameState.recentActivity.unshift({
         name: gameState.currentPlayer,
         prize: randomPrize,
@@ -2679,51 +2615,57 @@ async function drawPrize() {
     saveGameState();
     updateRecentActivityList();
     updateWaitingPlayerList();
+
     const { database, ref, push } = window.firebaseDB;
 
-await push(
-  ref(database, `rooms/${gameState.roomCode}/recentActivity`),
-  {
-    name: gameState.currentPlayer,
-    prize: randomPrize,
-    prizeType,
-    timestamp: Date.now()
-  }
-);
+    try {
+        await push(ref(database, `rooms/${gameState.roomCode}/recentActivity`), {
+            name: gameState.currentPlayer,
+            prize: randomPrize,
+            prizeType,
+            timestamp: Date.now()
+        });
 
-    // 🔥 UPDATE FIREBASE PLAYER
-    await updatePlayerInFirebase(gameState.currentPlayer, {
-        status: 'claimed',
-        prize: randomPrize,
-        prizeType,
-        claimedAt: Date.now()
-    });
+        await updatePlayerInFirebase(gameState.currentPlayer, {
+            status: 'claimed',
+            prize: randomPrize,
+            prizeType,
+            claimedAt: Date.now()
+        });
+    } catch (err) {
+        console.error('Error updating Firebase:', err);
+    }
 
-    // 🎉 HIỂN THỊ KẾT QUẢ
-    document.getElementById('prize-amount').textContent = randomPrize;
-    document.getElementById('winner-name').textContent = gameState.currentPlayer;
-    document.getElementById('winner-prize').textContent = randomPrize;
+    const prizeAmountEl = document.getElementById('prize-amount');
+    const winnerNameEl = document.getElementById('winner-name');
+    const winnerPrizeEl = document.getElementById('winner-prize');
+    
+    if (prizeAmountEl) {
+        prizeAmountEl.textContent = randomPrize;
+        if (prizeType === 'special') {
+            prizeAmountEl.classList.add('special');
+        } else {
+            prizeAmountEl.classList.remove('special');
+        }
+    }
+    if (winnerNameEl) winnerNameEl.textContent = gameState.currentPlayer;
+    if (winnerPrizeEl) winnerPrizeEl.textContent = randomPrize;
 
     const actionButtons = document.getElementById('prize-action-buttons');
-    actionButtons.innerHTML =
-        prizeType === 'money'
-            ? `
-                <button class="btn btn-primary" onclick="navigateTo('withdraw')">💰 RÚT LÌ XÌ</button>
-                <button class="btn btn-secondary" onclick="continueShaking()">🔄 TIẾP TỤC CHƠI</button>
-              `
-            : `
-                <button class="btn btn-primary" onclick="continueShaking()">🎊 TIẾP TỤC CHƠI</button>
-              `;
+    if (actionButtons) {
+        actionButtons.innerHTML = `
+            <button class="btn btn-primary" onclick="continueShaking()">🔄 TIẾP TỤC CHƠI</button>
+        `;
+    }
 
     navigateTo('result');
 }
 
-
-// Continue shaking
 function continueShaking() {
     if (gameState.remainingShakes > 0) {
         navigateTo('shake');
-        document.getElementById('remaining-shakes').textContent = gameState.remainingShakes;
+        const remainingEl = document.getElementById('remaining-shakes');
+        if (remainingEl) remainingEl.textContent = gameState.remainingShakes;
     } else {
         alert('Đã hết lượt lắc!');
         if (gameState.isHost) {
@@ -2734,192 +2676,12 @@ function continueShaking() {
     }
 }
 
-// Select withdraw option
-let selectedWithdrawOption = '';
-function selectWithdrawOption(option) {
-    selectedWithdrawOption = option;
-    document.querySelectorAll('.bank-option').forEach(opt => {
-        opt.classList.remove('selected');
-    });
-    document.getElementById('option-' + option).classList.add('selected');
-    
-    if (option === 'qr') {
-        navigateTo('qr-upload');
-    } else {
-        navigateTo('bank-info');
-    }
-}
-
-// QR preview
-function previewQR(event) {
-    const file = event.target.files[0];
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            document.getElementById('qr-preview-img').src = e.target.result;
-            document.getElementById('qr-preview').classList.remove('hidden');
-            document.getElementById('submit-qr-btn').disabled = false;
-        };
-        reader.readAsDataURL(file);
-    }
-}
-
-// Submit QR code
-function submitQRCode() {
-    console.log('Submitting QR code for player:', gameState.currentPlayer);
-    console.log('Prize:', gameState.currentPrize);
-    
-    document.getElementById('final-prize').textContent = gameState.currentPrize;
-    navigateTo('success');
-}
-
-// Submit bank info
-function submitBankInfo() {
-    const bankName = document.getElementById('bank-name').value;
-    const accountName = document.getElementById('account-name').value;
-    const accountNumber = document.getElementById('account-number').value;
-
-    if (!bankName || !accountName || !accountNumber) {
-        alert('Vui lòng điền đầy đủ thông tin!');
-        return;
-    }
-
-    console.log('Bank info:', {
-        player: gameState.currentPlayer,
-        prize: gameState.currentPrize,
-        bank: bankName,
-        accountName: accountName,
-        accountNumber: accountNumber
-    });
-
-    document.getElementById('final-prize').textContent = gameState.currentPrize;
-    navigateTo('success');
-}
-
-// Update player list
-function listenPlayersRealtime() {
-  if (
-    playersListenerStarted &&
-    playersListenerRoom === gameState.roomCode
-  ) return;
-
-  playersListenerStarted = true;
-  playersListenerRoom = gameState.roomCode;
-
-  const { database, ref, onValue } = window.firebaseDB;
-
-  // 👥 LIST PLAYER
-  onValue(ref(database, `rooms/${gameState.roomCode}/players`), (snapshot) => {
-    const data = snapshot.val();
-    gameState.players = data ? Object.values(data) : [];
-    updatePlayerList();
-    updateWaitingPlayerList();
-  });
-
-  // 🎮 LIST GAME START (chỉ player)
-  onValue(ref(database, `rooms/${gameState.roomCode}/gameStarted`), (snapshot) => {
-    const started = snapshot.val();
-    if (started && !gameState.isHost) {
-      gameState.gameStarted = true;
-      saveGameState();
-      navigateTo('started', true);
-    }
-  });
-  // 🎁 LIST RECENT ACTIVITY – HOST / OBSERVE REALTIME
-  onValue(
-    ref(database, `rooms/${gameState.roomCode}/recentActivity`),
-    (snapshot) => {
-      const data = snapshot.val();
-
-      if (!data) {
-        gameState.recentActivity = [];
-      } else {
-        gameState.recentActivity = Object.values(data)
-          .sort((a, b) => b.timestamp - a.timestamp);
-      }
-
-      updateRecentActivityList();
-    }
-  );
-}
-async function updatePlayerInFirebase(playerName, data) {
-  const { database, ref, get, update } = window.firebaseDB;
-
-  const playersRef = ref(database, `rooms/${gameState.roomCode}/players`);
-  const snap = await get(playersRef);
-  if (!snap.exists()) return;
-
-  const players = snap.val();
-
-  for (const key in players) {
-    if (players[key].name === playerName) {
-      await update(ref(database, `rooms/${gameState.roomCode}/players/${key}`), data);
-      break;
-    }
-  }
-}
-
-// Update prize inventory
-function updatePrizeInventory() {
-    const container = document.getElementById('prize-inventory');
-    if (!container) return;
-
-    container.innerHTML = '';
-
-    // ✅ đảm bảo backup luôn tồn tại
-    if (!gameState.denominationsBackup || Object.keys(gameState.denominationsBackup).length === 0) {
-        gameState.denominationsBackup = JSON.parse(JSON.stringify(gameState.denominations));
-    }
-
-    if (!gameState.specialPrizesBackup || Object.keys(gameState.specialPrizesBackup).length === 0) {
-        gameState.specialPrizesBackup = JSON.parse(JSON.stringify(gameState.specialPrizes));
-    }
-    
-    // Display money prizes
-    for (const [denom, qty] of Object.entries(gameState.denominations)) {
-        const total = gameState.denominationsBackup[denom] || qty;
-        const claimed = total - qty;
-        
-        const item = document.createElement('div');
-        item.className = 'prize-item';
-        item.innerHTML = `
-            <div class="prize-value">💰 ${denom}</div>
-            <div class="prize-count ${claimed > 0 ? 'claimed' : ''}">${claimed} / ${total}</div>
-        `;
-        container.appendChild(item);
-    }
-    
-    // Display special prizes
-    for (const [prize, qty] of Object.entries(gameState.specialPrizes)) {
-        const total = gameState.specialPrizesBackup[prize] || qty;
-        const claimed = total - qty;
-        
-        const item = document.createElement('div');
-        item.className = 'prize-item special';
-        item.innerHTML = `
-            <div class="prize-value">
-                🎁 ${prize}
-                <span class="prize-type-badge">Khác</span>
-            </div>
-            <div class="prize-count ${claimed > 0 ? 'claimed' : ''}">${claimed} / ${total}</div>
-        `;
-        container.appendChild(item);
-    }
-}
-
-// Share room
+// ========== 10. SHARE ==========
 function shareRoom() {
     const shareTitle = 'Lắc Lì Xì Tết 2026';
     const shareText = `Mời bạn tham gia phòng lì xì ${gameState.roomCode}`;
     const shareUrl = gameState.roomLink;
     
-    console.log('=== DEBUG SHARE ===');
-    console.log('navigator.share available:', !!navigator.share);
-    console.log('navigator.canShare available:', !!navigator.canShare);
-    console.log('Share data:', { title: shareTitle, text: shareText, url: shareUrl });
-    console.log('Protocol:', window.location.protocol);
-    
-    // Kiểm tra hỗ trợ Web Share API
     if (navigator.share) {
         const shareData = {
             title: shareTitle,
@@ -2927,30 +2689,21 @@ function shareRoom() {
             url: shareUrl
         };
         
-        // Kiểm tra xem data có thể share được không
         if (navigator.canShare && !navigator.canShare(shareData)) {
-            console.log('⚠️ Data không thể share, dùng fallback');
             fallbackShare(shareTitle, shareText, shareUrl);
             return;
         }
         
-        console.log('Attempting navigator.share()...');
-        
-        // Sử dụng native share sheet của hệ điều hành
         navigator.share(shareData)
         .then(() => {
             console.log('✅ Chia sẻ thành công');
         })
         .catch(err => {
-            console.log('❌ Lỗi chia sẻ:', err.name, err.message, err);
-            // Chỉ fallback nếu KHÔNG phải user cancel
             if (err.name !== 'AbortError') {
                 fallbackShare(shareTitle, shareText, shareUrl);
             }
         });
     } else {
-        console.log('⚠️ navigator.share không khả dụng, dùng fallback');
-        // Fallback cho trình duyệt không hỗ trợ
         fallbackShare(shareTitle, shareText, shareUrl);
     }
 }
@@ -2958,18 +2711,15 @@ function shareRoom() {
 function fallbackShare(title, text, url) {
     const fullText = `${title}\n\n${text}\n${url}`;
     
-    // Thử copy vào clipboard
     if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(fullText)
             .then(() => {
                 showToast('✅ Đã sao chép link chia sẻ!');
             })
             .catch(() => {
-                // Fallback cuối cùng: textarea method
                 fallbackCopyTextArea(fullText);
             });
     } else {
-        // Dùng textarea method cho các trình duyệt cũ
         fallbackCopyTextArea(fullText);
     }
 }
@@ -3000,7 +2750,6 @@ function fallbackCopyTextArea(text) {
 }
 
 function showToast(message) {
-    // Tạo toast notification đơn giản
     const toast = document.createElement('div');
     toast.textContent = message;
     toast.style.cssText = `
@@ -3021,14 +2770,32 @@ function showToast(message) {
     document.body.appendChild(toast);
     
     setTimeout(() => {
-        document.body.removeChild(toast);
+        if (document.body.contains(toast)) {
+            document.body.removeChild(toast);
+        }
     }, 2500);
 }
 
-// Confirm back actions
+// ========== 11. MISC ==========
+function switchTab(tabName, btn) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+    if (btn) btn.classList.add('active');
+
+    const tab = document.getElementById('tab-' + tabName);
+    if (tab) tab.classList.add('active');
+}
+
 function confirmBackToHome() {
+    if (gameState.currentScreen === 'host-observe') {
+        navigateTo('host-after-start');
+        return;
+    }
+    
     if (confirm('Bạn có chắc muốn thoát? Phòng sẽ được lưu lại.')) {
         navigateTo('home', true);
+        showHomeWithContinue();
     }
 }
 
@@ -3038,7 +2805,6 @@ function confirmBackFromShake() {
     }
 }
 
-// Touch support
 function initTouchSupport() {
     try {
         const selectors = ['.btn', '.denom-btn', '.quantity-btn', '.back-btn', '.bank-option', '.upload-area', '.envelope', '.tab-btn'];
@@ -3072,45 +2838,57 @@ function initTouchSupport() {
     }
 }
 
-// Initialize
-window.addEventListener('load', function() {
-    console.log('App loading...');
-    
-    try {
-        loadGameState();
+// ========== 12. INIT ==========
+window.addEventListener('load', function () {
+    createSparks();
+    loadGameState();
 
-        // ✅ HOST reload → quay lại admin + listen
-        if (gameState.isHost && gameState.roomCode) {
-          navigateTo('admin', true);
-          listenPlayersRealtime();
-        }
-
-        // ✅ PLAYER reload → chỉ listen
-        if (!gameState.isHost && gameState.roomCode && gameState.currentPlayer) {
-          listenPlayersRealtime();
-        }
-
-    } catch (e) {
-        console.error('Failed to load game state:', e);
-        showScreen('home');
-    }
-    
     const urlParams = new URLSearchParams(window.location.search);
-    const roomCode = urlParams.get('room');
-    if (roomCode) {
-        console.log('Room code from URL:', roomCode);
-        document.getElementById('join-room-code').value = roomCode;
-        navigateTo('enter-name');
-    } else {
-        if (!gameState.currentScreen || gameState.currentScreen === 'home') {
-            showScreen('home');
-        }
+    const roomFromURL = urlParams.get('room');
+
+    if (roomFromURL && !gameState.isHost) {
+        const input = document.getElementById('join-room-code');
+        if (input) input.value = roomFromURL;
+        showScreen('join-room');
+        initTouchSupport();
+        return;
     }
 
-    setTimeout(initTouchSupport, 100);
-    
-    console.log('App loaded successfully');
+    if (gameState.isHost && gameState.roomCode) {
+        const screen = gameState.currentScreen || 'admin';
+        
+        if (screen === 'home') {
+            showHomeWithContinue();
+        }
+        
+        showScreen(screen);
+        
+        setTimeout(() => {
+            if (screen === 'admin' || screen === 'host-observe' || screen === 'host-after-start') {
+                try {
+                    restoreAdminDashboard();
+                } catch (e) {
+                    console.error('Error restoring admin:', e);
+                }
+            }
+            
+            injectCancelButton();
+            injectStartedBackButton();
+        }, 100);
+
+        initTouchSupport();
+        return;
+    }
+
+    if (!gameState.isHost && gameState.roomCode && !roomFromURL) {
+        clearGameState();
+    }
+
+    showScreen('home');
+    showHomeWithContinue();
+    initTouchSupport();
 });
-    </script>
+
+</script>
 </body>
 </html>
